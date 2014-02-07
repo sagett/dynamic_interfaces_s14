@@ -12,8 +12,7 @@ background-color: grey;
 						            -ms-transition: background-color 1s;
 							          transition: background-color 1s;    
 								      text-align: center;
-								          padding: 30% 0;
-									      font: 100%/1.5 sans-serif;
+								        font: 100%/1.5 sans-serif;
 
 }
 
@@ -25,6 +24,7 @@ background-color: grey;
 
  img#at{
 	display: block;
+
 	margin-left: auto;
 	margin-right: auto
 }
