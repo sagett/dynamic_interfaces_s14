@@ -1,0 +1,30 @@
+#whole_body {
+background-color: grey;
+      background-image: -o-linear-gradient(transparent, black);    
+            background-image: -webkit-linear-gradient(transparent, black);
+	          background-image: -moz-linear-gradient(transparent, black);    
+		        background-image: -ms-linear-gradient(transparent, black);
+			      background-image: linear-gradient(transparent, black);    
+			            height: 100%;
+				          -o-transition: background-color 1s;
+					        -webkit-transition: background-color 1s;
+						      -moz-transition: background-color 1s;
+						            -ms-transition: background-color 1s;
+							          transition: background-color 1s;    
+								      text-align: center;
+								          padding: 30% 0;
+									      font: 100%/1.5 sans-serif;
+
+}
+
+#whole_body:hover {
+
+ background-color: black;  
+
+ }
+
+ img#at{
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
