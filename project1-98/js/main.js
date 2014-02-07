@@ -1,23 +1,26 @@
+var canvas;
 var gl;
 
 function WebGLStart() {
-	var canvas = document.getElementById("glcanvas");
+	canvas = document.getElementById("glcanvas");
 
-	gl = initWebGl(canvas);
-}
+	initWebGL(canvas);
+
 
 if (gl) {
 	gl.clearColor(0.0, 0.0, 0.0, 1.0);
-	gl.enable(gl.DEPTH_TESt);
+	gl.clearDepth(1.0);
+	gl.enable(gl.DEPTH_TEST);
 	gl.depthFunc(gl.LEQUAL);
 	gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);
-} 
+	}
+}
 
-function initWebGl() {
+function initWebGL() {
 	gl = null;
 	try {
 	// Try to grab the standard context. If it fails, fallback to experimental.
-	 gl = canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
+	 gl = canvas.getContext("experimental-webgl");
        	}
 
 	catch(e) {}         
